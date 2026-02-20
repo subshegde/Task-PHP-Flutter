@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:task/core/constant.dart';
 import 'package:task/data/repo/employee_repo_impl.dart';
 import 'package:task/data/source/employee_remote_data_source.dart';
 import 'package:task/domain/usecases/add_employee.dart';
@@ -20,7 +21,7 @@ void main() {
   final employeeRepo = EmployeeRepositoryImpl(
     remoteDataSource:
         // Use 127.0.0.1 for ADB reverse port forwarding compatibility
-        EmployeeRemoteDataSource(baseUrl: 'http://127.0.0.1:8000'),
+        EmployeeRemoteDataSource(baseUrl: baseUrl),
   );
   runApp(MyApp(repository: employeeRepo));
 }
