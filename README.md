@@ -150,3 +150,8 @@ flutter run
 -   **Theming**: All colors are centralized in `AppColors.dart` for easy rebranding.
 
 ---
+
+## Video
+
+https://github.com/user-attachments/assets/f16205e6-b2ad-4416-a724-24d9bd0594ff
+
